@@ -1,13 +1,15 @@
 import React from 'react'
-import ComponetClass from './Componet/ComponetClass';
-import Functions from './Componet/Functions';
+import UseStateExp1 from './Componet/Hooks-day1/UseStateExp1'
+// import ComponetClass from './Componet/ComponetClass';
+// import Functions from './Componet/Functions';
 
 
 export default function App() {
   return (
     <div>
-      <ComponetClass />
-      <Functions />
+      {/* <ComponetClass />
+      <Functions /> */}
+      <UseStateExp1 />
       
     </div>
   )
