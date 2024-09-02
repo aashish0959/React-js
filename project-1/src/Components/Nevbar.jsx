@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <>
       <div className="container">
-        <nav className="navbar navbar-light bg-light px-3">
+        <nav className="navbar navbar-light  px-3">
           <a className="navbar-brand" href="#">
             <img src="https://demo.pocotheme.com/2/image/catalog/maza/svg/logo3.svg" alt="Poco Mega Store Logo" className="logo"/>
           </a>
@@ -33,7 +33,7 @@ export default function Navbar() {
             </a>
             <a href="#" className="icon mx-3 position-relative">
             <i class="fa-solid fa-cart-shopping"></i>
-            
+           
              
             </a>
           </div>

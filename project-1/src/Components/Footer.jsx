@@ -1,5 +1,6 @@
 import React from 'react';
 import Nevbar from './Nevbar';
+import Background from './Backgrund';
 
 export default function Footer() {
   return (
@@ -7,10 +8,12 @@ export default function Footer() {
       <footer className="footer mt-auto py-3" style={{ backgroundColor: '#EEEEEE' }}>
         <div className="container">
           <div className="row">
-            <Nevbar />
+            <Nevbar  />
             <div className="col-md-3">
               <h5 className="fs-3">About Us</h5>
-              <p className="fs-5 mt-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              <p className="fs-5 mt-4">
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+              </p>
             </div>
             <div className="col-md-3">
               <h5 className="fs-3">My Account</h5>
