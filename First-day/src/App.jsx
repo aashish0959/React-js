@@ -10,8 +10,8 @@ export default function App() {
     <div>
       {/* <ComponetClass />
       <Functions /> */}
-      {/* <UseStateExp1 /> */}
-      <UseEffceect2 />
+      <UseStateExp1 />
+      {/* <UseEffceect2 /> */}
       
     </div>
   )

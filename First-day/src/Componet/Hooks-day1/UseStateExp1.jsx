@@ -5,7 +5,7 @@ export default function UseStateExp1() {
     const [name, setName] = useState("aashish");
     const [arr, setArr] = useState([1, 2, 3, 4, 5, 6]);
     const [obj, setObj] = useState({ name: "aashish", subject: "Full stack" });
-    const [arrobj, setarrObj] = useState([{ name: "aashish", subject: "Full stack" }, {name: "aashish", subject: "Full stack" }]);
+    const [arrobj, setarrObj] = useState([{ name: "aashish", subject: "Full stack" },{name :"kartik" ,subject : "12th"}]);
 
     const increase = () => {
         setCount(count + 1);
@@ -36,10 +36,10 @@ export default function UseStateExp1() {
 
                 {
                     arrobj.map((e,i)=>
-                        <ul>
-                    <li>Name: {obj.name}</li>
-                    <li>Subject: {obj.subject}</li>
-                </ul>
+                    <ul key={i}>
+                        <li>Name: {e.name}</li>
+                        <li>Subject: {e.subject}</li>
+                    </ul>
                     )
                 }
                 
