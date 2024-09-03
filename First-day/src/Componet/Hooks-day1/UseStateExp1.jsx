@@ -35,12 +35,14 @@ export default function UseStateExp1() {
                 <p>{obj.subject}</p>
 
                 {
-                    arrobj
-                }
-                <ul>
+                    arrobj.map((e,i)=>
+                        <ul>
                     <li>Name: {obj.name}</li>
                     <li>Subject: {obj.subject}</li>
                 </ul>
+                    )
+                }
+                
             </center>
         </>
     );
