@@ -16,9 +16,12 @@ export default function Counter() {
     <div className="container">
         <h1 className='pulser  cssanimation hu__hu__'>Counter</h1>
         <h2>{count}</h2>
-        <div><button onClick={increment} className='button' > <a href="#"> Increment</a> </button>
-        <button onClick={Decrement}  className='button'> <a href="#">Decrement</a> </button>
-        <button onClick={reset}  className='button'><a href="#"> Reset</a> </button></div>
+        <div>
+        <button  onClick={increment} class="glow-on-hover" type="button">Increment</button>
+        <button  onClick={Decrement} class="glow-on-hover" type="button">Decrement</button>
+        <button  onClick={reset} class="glow-on-hover" type="button">Reset</button>
+       
+        </div>
         
     </div>
     </>
