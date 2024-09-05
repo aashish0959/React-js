@@ -2,13 +2,16 @@ import React from 'react';
 
 export default function Secsen1() {
   return (
-    <div className="container  border border-black">
+    <div className="container   ">
         <div className="row">
-       <center> <div className="blog-post">
-      <img src="https://demo.pocotheme.com/2/image/cache/catalog/maza/demo/mz_poco/megastore-2/blog/4-430x323.webp  " alt="Blog Post Image" />
+       <center> 
+        <div className="blog-post">
+      {/* <img src="https://demo.pocotheme.com/2/image/cache/catalog/maza/demo/mz_poco/megastore-2/blog/4-430x323.webp  " alt="Blog Post Image" /> */}
       <div className="post-info mt-3">
         <span className="date">25 Feb 2019</span>
-        <span className="author">Jolio Balia</span>
+        <span className="author">Jo
+          
+          lio Balia</span>
         <span className="comments">0 comments</span>
         <span className="views">1316</span>
       </div>
