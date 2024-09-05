@@ -14,7 +14,8 @@ export default function Counter() {
   return (
     <>
     <div className="container">
-        <h1 className='pulser  cssanimation hu__hu__'>Counter</h1>
+    <a href="#">Counter</a>
+        
         <h2>{count}</h2>
         <div>
         <button  onClick={increment} class="glow-on-hover" type="button">Increment</button>
