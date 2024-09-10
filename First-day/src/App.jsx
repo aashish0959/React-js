@@ -3,6 +3,7 @@ import UseStateExp1 from './Componet/Hooks-day1/UseStateExp1'
 import UseEffceect2 from './Componet/Hooks-day1/UseEffceect2'
 import Eventes from './Componet/Eventes'
 import ContionalRendering from './Componet/ContionalRendering'
+import UseRefEx3 from './Componet/Hooks-day1/UseRefEx3'
 // import ComponetClass from './Componet/ComponetClass';
 // import Functions from './Componet/Functions';
 
@@ -14,8 +15,9 @@ export default function App() {
       <Functions /> */}
       {/* <UseStateExp1 /> */}
       {/* <UseEffceect2 /> */}
-      <Eventes />
-      <ContionalRendering />
+      {/* <Eventes /> */}
+      {/* <ContionalRendering /> */}
+      <UseRefEx3 />
       
     </div>
   )
