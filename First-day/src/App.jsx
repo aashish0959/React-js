@@ -4,8 +4,12 @@ import UseEffceect2 from './Componet/Hooks-day1/UseEffceect2'
 import Eventes from './Componet/Eventes'
 import ContionalRendering from './Componet/ContionalRendering'
 import UseRefEx3 from './Componet/Hooks-day1/UseRefEx3'
-// import ComponetClass from './Componet/ComponetClass';
-// import Functions from './Componet/Functions';
+import ControlledCom from './Componet/Hooks-day1/ControlledCom'
+import UncontrolledCom from './Componet/Hooks-day1/UncontrolledCom'
+import FormHendling from './Componet/Hooks-day1/FormHendling'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ComponetClass from './Componet/ComponetClass';
+import Functions from './Componet/Functions';
 
 
 export default function App() {
@@ -17,7 +21,10 @@ export default function App() {
       {/* <UseEffceect2 /> */}
       {/* <Eventes /> */}
       {/* <ContionalRendering /> */}
-      <UseRefEx3 />
+      {/* <UseRefEx3 /> */}
+      {/* <ControlledCom /> */}
+      {/* <UncontrolledCom /> */}
+      <FormHendling />
       
     </div>
   )
