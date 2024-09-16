@@ -10,6 +10,7 @@ import FormHendling from './Componet/Hooks-day1/FormHendling'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ComponetClass from './Componet/ComponetClass';
 import Functions from './Componet/Functions';
+import Form from './Componet/Hooks-day1/Form'
 
 
 export default function App() {
@@ -24,7 +25,8 @@ export default function App() {
       {/* <UseRefEx3 /> */}
       {/* <ControlledCom /> */}
       {/* <UncontrolledCom /> */}
-      <FormHendling />
+      {/* <FormHendling /> */}
+      <Form />
       
     </div>
   )
