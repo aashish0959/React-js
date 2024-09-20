@@ -1,0 +1,14 @@
+.container-fluid{
+    background-color: aliceblue;
+    color: white;
+}
+.container{
+    margin-top: 30px;
+}
+.a1{
+    display: flex;
+    gap: 30px;
+}
+
+
+
