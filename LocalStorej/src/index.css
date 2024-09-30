@@ -1,0 +1,95 @@
+/* General Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  table th,
+  table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  thead {
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Input fields */
+  input {
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Add/Update Button */
+  button {
+    display: block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  /* Styling for Edit Button */
+  .btn-edit {
+    background-color: #f0ad4e;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-edit:hover {
+    background-color: #ec971f;
+  }
+  
+  /* Styling for Delete Button */
+  .btn-delete {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-delete:hover {
+    background-color: #c9302c;
+  }
+  
+  /* Styling for Status Button */
+  .btn-status {
+    background-color: #5bc0de;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-status.success {
+    background-color: #5cb85c;
+  }
+  
+  .btn-status:hover {
+    background-color: #46b8da;
+  }
+  
+  .btn-status.success:hover {
+    background-color: #4cae4c;
+  }
+  

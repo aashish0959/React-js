@@ -1,63 +1,72 @@
-import React, { useEffect, useState } from 'react';
-import { Table } from 'react-bootstrap'; 
+import React, { useEffect, useState } from "react";
+import { Table } from "react-bootstrap";
 
 export default function Crud() {
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
   const [city, setCity] = useState("");
-  const [record, setRecord] = useState([]); 
+  const [record, setRecord] = useState([]);
 
   useEffect(() => {
-    let storedData = JSON.parse(localStorage.getItem("Student")) || [];
-    setRecord(storedData); 
-  }, []); 
+    let data = JSON.parse(localStorage.getItem("student")) || [];
+    setRecord(data);
+  }, []);
 
   const handleAdd = () => {
     let user = { id: Date.now(), name, subject, city };
-    const updatedRecord = [...record, user];
-    setRecord(updatedRecord);
-    localStorage.setItem("Student", JSON.stringify(updatedRecord));
+    let oldRecord = JSON.parse(localStorage.getItem("student")) || [];
+    oldRecord.push(user);
+    setRecord(oldRecord);
+    localStorage.setItem("student", JSON.stringify(oldRecord));
+
+    setName("");
+    setSubject("");
+    setCity("");
   };
 
   return (
     <>
-      <h1>CRUD with local storage</h1>
-
-      <input type="text" placeholder="Enter your Name" onChange={(e) => setName(e.target.value)} />
-      <input type="text" placeholder="Enter your Subject" onChange={(e) => setSubject(e.target.value)} />
-      <input type="text" placeholder="Enter your City" onChange={(e) => setCity(e.target.value)} />
+      <input
+        type="text"
+        placeholder="Enter your Name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+      <input
+        type="text"
+        placeholder="Enter your Subject"
+        value={subject}
+        onChange={(e) => setSubject(e.target.value)}
+      />
+      <input
+        type="text"
+        placeholder="Enter your City"
+        value={city}
+        onChange={(e) => setCity(e.target.value)}
+      />
 
       <button onClick={handleAdd}>Add Data</button>
 
-      <Table striped>
+      <Table striped bordered hover>
         <thead>
           <tr>
-            <th>#</th>
-            <th>ID</th>
+            <th>Id</th>
             <th>Name</th>
             <th>Subject</th>
             <th>City</th>
           </tr>
         </thead>
         <tbody>
-          {record && record.length > 0 ? (
-            record.map((e, i) => (
-              <tr key={e.id}>
-                <td>{i + 1}</td>
-                <td>{e.id}</td>
-                <td>{e.name}</td>
-                <td>{e.subject}</td>
-                <td>{e.city}</td>
-              </tr>
-            ))
-          ) : (
-            <tr>
-              <td colSpan="5">No data available</td>
+          {record.map((item) => (
+            <tr key={item.id}>
+              <td>{item.id}</td>
+              <td>{item.name}</td>
+              <td>{item.subject}</td>
+              <td>{item.city}</td>
             </tr>
-          )}
+          ))}
         </tbody>
       </Table>
     </>
   );
 }
-
