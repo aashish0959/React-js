@@ -14,18 +14,21 @@ export default function Form() {
     e.preventDefault();
 
     if (!name) {
+      console.log("name required")
       setNameErr("Name is required");
     } else {
       setNameErr("");
     }
 
     if (!subject) {
+      console.log("name required")
       setSubjectErr("Subject is required");
     } else {
       setSubjectErr("");
     }
 
     if (!email) {
+      console.log("name required")
       setEmailErr("Email is required");
     } else {
       setEmailErr("");

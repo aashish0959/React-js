@@ -16,17 +16,17 @@ import Form from './Componet/Hooks-day1/Form'
 export default function App() {
   return (
     <div>
-      {/* <ComponetClass />
-      <Functions /> */}
+       {/* <ComponetClass /> */}
+      {/* <Functions />  */}
       {/* <UseStateExp1 /> */}
       {/* <UseEffceect2 /> */}
       {/* <Eventes /> */}
       {/* <ContionalRendering /> */}
       {/* <UseRefEx3 /> */}
       {/* <ControlledCom /> */}
-      {/* <UncontrolledCom /> */}
+      <UncontrolledCom />
       {/* <FormHendling /> */}
-      <Form />
+      {/* <Form /> */}
       
     </div>
   )

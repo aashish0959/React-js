@@ -64,7 +64,8 @@ export default function TaskManager() {
 
   return (
     <>
-      <div className="container w-50">
+      <div className="container w-70">
+        <center><h1>TaskManager</h1></center>
         <Form>
           <FormGroup>
             <Label for="nameInput">Name</Label>
