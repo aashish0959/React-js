@@ -1,0 +1,202 @@
+.create-container {
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .create-container h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .create-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create-container label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .create-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .create-container button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .create-container button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .delete-container {
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fce4e4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .delete-container h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #d32f2f;
+  }
+  
+  .delete-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .delete-container label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .delete-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .delete-container button {
+    padding: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .delete-container button:hover {
+    background-color: #c82333;
+  }
+  
+
+  .update-container {
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #e3f2fd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .update-container h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #1565c0;
+  }
+  
+  .update-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .update-container label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .update-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .update-container button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .update-container button:hover {
+    background-color: #388e3c;
+  }
+  
+
+  .home-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-container h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .home-container .link-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .home-container a {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-container a:hover {
+    background-color: #0056b3;
+  }
+  
+  .home-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .home-container table th, .home-container table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .home-container table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .home-container table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
