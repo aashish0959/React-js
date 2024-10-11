@@ -1,0 +1,54 @@
+/* App.css */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif; /* Global font family */
+}
+
+.container {
+  text-align: center;
+  margin: auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Container shadow for visual appeal */
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5rem;
+  font-family: 'Helvetica', sans-serif; /* Font for headings */
+}
+
+.button-container {
+  margin: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  font-family: 'Arial', sans-serif; /* Font for buttons */
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  border-color: #388e3c; /* Change border color on hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
+}
+
+span {
+  display: inline-block;
+  width: 50px;
+  font-size: 1.5rem;
+  font-family: 'Arial', sans-serif; /* Font for the count value */
+}
