@@ -2,19 +2,38 @@
   "posts": [
     {
       "id": "2",
-      "title": "another title",
-      "views": 200
+      "title": "New Titledv",
+      "views": "csf"
     },
     {
       "id": "3",
-      "title": "a title",
-      "views": 300
+      "title": "New Title",
+      "views": "123"
     },
     {
       "id": "4",
-      "title": "another title",
-      "views": 400
+      "title": "New Title",
+      "views": "123"
+    },
+    {
+      "id": "5",
+      "title": "New Title",
+      "views": "123"
+    },
+    {
+      "id": "6",
+      "title": "New Title",
+      "views": "123"
+    },
+    {
+      "id": "6",
+      "title": "New Title",
+      "views": "123"
+    },
+    {
+      "id": "7",
+      "title": "New Title",
+      "views": "123"
     }
-    
   ]
 }
