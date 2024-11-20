@@ -1,0 +1,156 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container Styling */
+center {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px 50px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #4a4e69;
+}
+
+/* Input Fields Styling */
+input {
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #4a4e69;
+    outline: none;
+}
+
+/* General Button Styling */
+button {
+    position: relative;
+    overflow: hidden; /* Ensure the ripple stays within the button */
+    height: 45px;
+    width: 180px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #4a4e69;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #9a8c98;
+    transform: scale(1.05);
+}
+
+/* Ripple Effect */
+button::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple-animation 0.6s linear;
+    pointer-events: none;
+}
+
+/* Trigger Ripple Effect on Hover */
+button:hover::after {
+    transform: scale(4); /* Scale the ripple effect */
+    opacity: 0; /* Fade out the ripple */
+}
+
+/* Animation Keyframes */
+@keyframes ripple-animation {
+    from {
+        transform: scale(0);
+        opacity: 0.7;
+    }
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+#bt-2 {
+    height: 40px;
+    width: 90px;
+    font-size: 14px;
+    border-radius: 6px;
+    background-color: #4caf50;
+    color: #fff;
+}
+
+#bt-2:hover {
+    background-color: #388e3c;
+}
+
+#bt-3 {
+    height: 40px;
+    width: 90px;
+    font-size: 14px;
+    border-radius: 6px;
+    background-color: #e63946;
+    color: #fff;
+}
+
+#bt-3:hover {
+    background-color: #d62828;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: center;
+    font-size: 18px;
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #4a4e69;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
