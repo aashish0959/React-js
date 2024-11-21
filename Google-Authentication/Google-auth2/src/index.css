@@ -1,0 +1,188 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container styling */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Login card styling */
+  .login-card {
+    background: white;
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.8s ease-out;
+  }
+  
+  /* Heading styling */
+  .login-heading {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  /* Button styling */
+  .login-button {
+    background: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(66, 133, 244, 0.4);
+  }
+  
+  .login-button:hover {
+    background: #357ae8;
+    transform: scale(1.05);
+  }
+  
+  .login-button:active {
+    transform: scale(0.95);
+  }
+  
+  .login-button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(66, 133, 244, 0.7);
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  .user1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .user2 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    max-width: 800px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+    opacity: 0;
+    animation-name: fadeIn, showText;
+    animation-duration: 1s, 1.5s;
+    animation-fill-mode: forwards;
+  }
+  
+
+  h1 {
+    font-size: 5rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+    animation: bounceIn 1s ease-out;
+  }
+  
+  #h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    font-weight: bold;
+    animation: bounceIn 1s ease-out;
+  }
+
+  p {
+    font-size: 2.0rem;
+    padding-top: 20px;
+    color: #666;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeInText 2s ease-out 1s forwards;
+  }
+
+  .error-message {
+    font-size: 1.5rem;
+    color: red;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards, shake 0.5s ease-in-out infinite;
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInText {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
