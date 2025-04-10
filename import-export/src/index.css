@@ -1,0 +1,600 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.contact-popup {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  z-index: 9999;
+  padding: 20px;
+  max-width: 300px;
+  animation: slideDown 0.4s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.popup-inner {
+  text-align: center;
+}
+
+.director-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.director-info div {
+  text-align: center;
+}
+
+.director-info img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #ff8c00;
+}
+
+.close-btn {
+  margin-top: 15px;
+  background-color: #ff8c00;
+  border: none;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.navbar,
+.container {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.nav-link-custom1 {
+  color: #697080 !important;
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link-custom1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #000000;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link-custom1:hover {
+  color: #000000 !important;
+  transform: scale(1.05);
+}
+
+.nav-link-custom1:hover::after {
+  width: 100%;
+}
+
+.nav-link-custom1 {
+  color: #697080 !important;
+  font-size: 20px;
+  font-weight: 700;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link-custom1:hover {
+  color: #000000 !important;
+  transform: scale(1.05);
+}
+
+.nav-link-custom1 {
+  color: #697080 !important;
+  font-weight: 700;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.nav-link-custom1:hover {
+  color: #000000 !important; /* Hover pe black */
+}
+
+.nav-link-custom {
+  color: #697080 !important;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  transform: scale(1.05);
+  color: #000000 !important; /* Optional hover color */
+}
+.nav-link-custom {
+  color: #697080 !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link-custom::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 0%;
+  background-color: #697080;
+  transition: width 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: #000000 !important;
+  
+}
+
+.nav-link-custom:hover::after {
+  width: 100%;
+}
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #000000;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+.hover-img-container {
+  overflow: hidden;
+  display: inline-block;
+  margin-top: -20px; /* 👈 Image thoda upar */
+}
+
+.hover-img {
+  transition: transform 0.5s ease-in-out;
+  border: none;             /* 👈 No border */
+  border-radius: 0px;       /* 👈 No round corners */
+}
+
+.hover-img:hover {
+  transform: translateX(15px); /* 👈 Move to right on hover */
+}
+
+/* Optional: Mobile responsiveness */
+@media (max-width: 768px) {
+  .hover-img:hover {
+    transform: translateX(5px);
+  }
+}
+
+
+
+
+
+body {
+  padding-top: 70px;
+ 
+}
+/* You can include this in your App.css or a module */
+#about h2 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+#about p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+h1 {
+  font-family: "Georgia", serif;
+  text-transform: uppercase;
+}
+
+
+.hero-btn:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+.about-section {
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #555;
+}
+
+.highlight-text {
+  font-size: 3rem;
+  color: #1e3a8a; /* Tailwind-style deep blue */
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.floating-image {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+.highlight-text:hover {
+  transform: scale(1.05);
+  color: #ff8c00;
+}
+
+.description {
+  font-size: 18px;
+  color: #555;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.floating-image {
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.floating-image:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+.product-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.product-title::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background-color: #f4a424;
+  display: block;
+  margin: 5px auto 0;
+}
+
+.product-card {
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  height: 250px;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.product-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-desc {
+  font-size: 16px;
+  color: #555;
+}
+
+.btn-custom {
+  background-color: #f4a424;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-custom:hover {
+  background-color: #ff8c00;
+}
+
+.product-section  {
+  background: url("https://regalimportexport.com/wp-content/uploads/2022/07/Untitled-design-67.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+  padding: 60px 0;
+  color: #222;
+}
+
+.product-section::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+/* Card styling */
+.product-card {
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  background: white;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Button styling */
+.btn-custom {
+  background-color: black;
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: orange;
+  color: black;
+}
+
+/* Title */
+.product-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: white;
+  border-bottom: 2px solid orange;
+  display: inline-block;
+}
+
+
+.why-bg {
+  background: url("https://regalimportexport.com/wp-content/uploads/2022/07/Untitled-design-40-1.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+  padding: 60px 0;
+  color: #222;
+}
+
+.feature-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  transition: transform 0.4s ease;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card:hover {
+  transform: scale(1.08);
+}
+
+.spice-img {
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.4s ease;
+}
+
+.spice-img:hover {
+  transform: scale(1.1);
+}
+.hero-section {
+  position: relative;
+  background: url("https://source.unsplash.com/1600x600/?spices,food") no-repeat center center/cover;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.hero-section:hover {
+  transform: scale(1.03);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: transform 0.4s ease;
+}
+
+p {
+  font-size: 1.2rem;
+  max-width: 750px;
+  margin: auto;
+}
+
+.hero-section:hover h1 {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #f8f9fa; /* Light grey */
+  color: #697080 ;
+}
+
+footer h5,
+footer h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+footer p,
+footer li,
+footer samp {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+footer a {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #007bff;
+}
+
+footer .social-icons a {
+  font-size: 1.2rem;
+  transition: transform 0.3s;
+}
+
+footer .social-icons a:hover {
+  transform: scale(1.2);
+  color: #0d6efd;
+}
+
+footer iframe {
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Spacing */
+@media (max-width: 768px) {
+  footer .col-md-4,
+  footer .col-md-3,
+  footer .col-md-2 {
+    text-align: center;
+  }
+
+  footer h5,
+  footer h3 {
+    margin-top: 1rem;
+  }
+
+  footer .social-icons {
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+.col {
+  border: 2px solid black;
+  height: auto;
+}
+
+
+.container {
+  border: 2px solid green;
+  height: auto;
+}
+
+#image1 {
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("bac imgae.jpg");
+
+  height: auto;
+
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.text1{
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.text2{
+  font-family: sans-serif;
+  color: white;
+}
+.text-3{
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.text4{
+  font-family: sans-serif;
+  text-align: justify;
+  font-size: 17px;
+  line-height: 27px;
+}
+.text5{
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.text6{
+  font-family: sans-serif;
+  /* line-height: 27px; */
+  text-align: center;
+}
+.img3 img {
+  height: 100%;
+  width: 100%;
+}
+.img4 img{
+  height: 250px;
+  width: 250px;
+}
